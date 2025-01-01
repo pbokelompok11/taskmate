@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .menu-item a {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+        .menu-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Dashboard</h1>
+        <a href="profile.html">Profile</a>
+        <a href="logout.php">Logout</a>
+    </div>
+    <div class="content">
+        <h2>Welcome</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <a href="daftar_tugas.php">Daftar Tugas</a>
+            </div>
+            <div class="menu-item">
+                <a href="kelola_tugas.php">Kelola Tugas</a>
+            </div>
+            <div class="menu-item">
+                <a href="kelola_notifikasi.php">Kelola Notifikasi</a>
+            </div>
+            <div class="menu-item">
+                <a href="profile.php">Profil</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
